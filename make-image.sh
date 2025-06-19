@@ -36,10 +36,7 @@ PACKAGES+=" modeminfo luci-app-modeminfo atinout modemband luci-app-modemband lu
 PACKAGES+=" modeminfo-serial-tw modeminfo-serial-dell modeminfo-serial-xmm modeminfo-serial-fibocom modeminfo-serial-sierra"
 
 # Tunnel VPN
-OPENCLASH+="coreutils-nohup bash ca-certificates ipset ip-full libcap libcap-bin ruby ruby-yaml kmod-tun kmod-inet-diag kmod-nft-tproxy luci-app-openclash"
 NIKKI+="nikki luci-app-nikki"
-NEKO+="bash kmod-tun php8 php8-cgi luci-app-neko"
-PASSWALL+="chinadns-ng resolveip dns2socks dns2tcp ipt2socks microsocks tcping xray-core xray-plugin luci-app-passwall"
 
 # Handle_Tunnel
 handle_tunnel_option() {
@@ -58,21 +55,15 @@ PACKAGES+=" luci-app-diskman luci-app-tinyfm"
 # Bandwidth And Network Monitoring
 PACKAGES+=" internet-detector luci-app-internet-detector vnstat2 vnstati2 luci-app-netmonitor"
 
-# Remote Services
-PACKAGES+=" tailscale luci-app-tailscale"
-
-# Bandwidth And Speedtest
-PACKAGES+=" speedtestcli luci-app-eqosplus"
-
 # Theme
-PACKAGES+=" luci-theme-argon luci-theme-alpha luci-theme-material"
+PACKAGES+=" luci-theme-material"
 
 # Php8
 PACKAGES+=" php8 php8-fastcgi php8-fpm php8-mod-session php8-mod-ctype php8-mod-fileinfo php8-mod-zip php8-mod-iconv php8-mod-mbstring"
 
 # Custom Packages And More
 PACKAGES+=" htop lolcat python3-pip zram-swap luci-app-rakitanmanager luci-app-poweroffdevice \
-luci-app-ramfree luci-app-ttyd luci-app-lite-watchdog luci-app-ipinfo luci-app-droidnet luci-app-mactodong"
+luci-app-ramfree luci-app-ttyd"
 
 # Handle_profile
 handle_profile_packages() {
